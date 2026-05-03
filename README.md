@@ -1,28 +1,64 @@
-# Assignment 1 – Transliteration Accuracy Testing
+# IT23650220 - ITPM Assignment 1
 
-## Student ID:
+## Project Title
 
-IT23650220
+Frontend Test Automation using Playwright
 
-## Description:
+---
 
-This project tests the accuracy of the Sinhala chat transliteration system using 50 negative test cases.
+## Student Details
 
-## Requirements:
+Name: Your Name
+Student ID: IT23650220
 
-* Python 3.11+
-* Playwright
-* Openpyxl
+---
 
-## Setup:
+## Project Description
 
+This project tests the accuracy of Singlish to Sinhala transliteration using automated frontend testing with Playwright.
+
+---
+
+## Installation (One-Time Setup)
+
+Run the following commands in Command Prompt:
+
+
+pip install -U pip
 pip install playwright openpyxl
-python -m playwright install
+playwright install
 
-## Run:
 
-python test_automation.py --excel "IT23650220_Assignment 1 - Test cases.xlsx" --url "https://www.pixelssuite.com/chat-translator"
+---
 
-## Notes:
+## ▶️ How to Run the Project
 
-All test cases are negative scenarios where the system fails to correctly translate Singlish to Sinhala.
+Navigate to the project folder and run:
+
+
+python test_automation.py --excel "Assignment 1 - Test cases.xlsx" --url "https://www.pixelssuite.com/chat-translator" --wait-ms 5000 --type-delay-ms 80 --slow-mo-ms 200 --save-every 1 --keep-open
+
+
+---
+
+## Test Approach
+
+50 negative test cases
+Covers all 24 Singlish input types
+Focuses on incorrect transliteration scenarios
+
+---
+
+##  Known Issue
+
+Due to CORS restrictions, the application sometimes returns:
+"Failed to fetch" instead of actual output.
+
+---
+
+## Files Included
+
+test_automation.py
+Assignment 1 - Test cases.xlsx
+README.md
+GitHub link
