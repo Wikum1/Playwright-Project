@@ -49,10 +49,17 @@ Focuses on incorrect transliteration scenarios
 
 ---
 
-##  Known Issue
+## Known Issue - CORS Error
 
-Due to CORS restrictions, the application sometimes returns:
-"Failed to fetch" instead of actual output.
+During automation testing, the target web application did not return the Sinhala transliteration output.
+
+The browser console showed a CORS/API fetch error, and the Excel file recorded the actual output as:
+
+Failed to fetch
+
+This happened because the frontend could not access the backend translation API due to a CORS policy restriction. Therefore, the automation correctly captured the system failure in the Actual Output column.
+
+All test cases are marked as FAIL because the expected Sinhala transliteration output was not returned by the application.
 
 ---
 
