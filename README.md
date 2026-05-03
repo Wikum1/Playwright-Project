@@ -31,7 +31,7 @@ playwright install
 
 ---
 
-## ▶️ How to Run the Project
+## How to Run the Project
 
 Navigate to the project folder and run:
 
